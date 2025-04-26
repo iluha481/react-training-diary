@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    flex-direction:row ;
+    padding: 1rem;
+    background-color: black;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+}
+
+    .nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

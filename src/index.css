@@ -1,0 +1,94 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #181a1b;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --calendar-item-active-bg: #e6f7ff; 
+  --calendar-text-color: #000000;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  /* display: flex;
+  place-items: center; */
+  min-width: 320px;
+  min-height: 90vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+.ant-picker-calendar-date.ant-picker-calendar-date-today.ant-picker-calendar-date-selected {
+  background-color: var(--calendar-item-active-bg) !important;
+  color: var(--calendar-text-color) !important;
+}
+
+/* Убедимся, что цвет текста в выбранной ячейке контрастный */
+.ant-picker-calendar-date.ant-picker-calendar-date-selected .ant-picker-calendar-date-value {
+  color: var(--calendar-text-color) !important;
+}
+
+/* Дополнительно можно переопределить другие стили календаря, если нужно */
+.ant-picker-calendar {
+  background: var(--calendar-bg, inherit);
+}
+
+/* Стили для темной темы (переключаются через атрибут data-theme) */
+[data-theme="dark"] {
+  --calendar-item-active-bg: #2b2b2b; /* Цвет для темной темы */
+  --calendar-text-color: #ffffff; /* Цвет текста для темной темы */
+  --calendar-bg: #1f1f1f; /* Фон календаря для темной темы */
+}

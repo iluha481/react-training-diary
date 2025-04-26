@@ -1,0 +1,15 @@
+.workout-card .ant-card-cover img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .workout-card {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .workout-card .ant-card-body {
+    padding: 10px;
+    text-align: center;
+  }
