@@ -8,8 +8,7 @@ const { Title, Paragraph } = Typography;
 
 const images = [
     'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500', 
-    'https://sun1-29.userapi.com/s/v1/ig2/BGzcgSM7vqk6g9InwexFz03T4RlbEsdCiuBasMTaJOgRCkCmoDYVNABqy1s5gQUhEAHMELEda6QUQO2AL64-6BWb.jpg?quality=96&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080&from=bu&u=Ox-cAgTaZ-lRdp-qioS1L73tLQ6HZIjt1OEKXRCyh-4&cs=807x807',
-];
+    ];
 
 const HomePage = () => {
     return (
