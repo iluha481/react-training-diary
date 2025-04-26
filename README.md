@@ -1,8 +1,16 @@
-# React + Vite
+# Приложение "Дневник тренировок"
+Написано на React + Vite с использованием библиотеки antd
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Запуск
+```sh
+$ npm run dev
+```
 
-Currently, two official plugins are available:
+## Требования
+Для запуска нужен установленный NodeJS и запущенный [сервер](https://github.com/iluha481/gin-server-training-diary).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+в .env должен быть указан host, на котором запущен сервер
+
+Пример:
+
+VITE_HOST="http://localhost:8080"
